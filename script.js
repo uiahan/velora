@@ -25,7 +25,7 @@ async function fetchQuotes() {
   data.forEach((q) => {
     const div = document.createElement("div");
     div.className =
-      "p-4 shadow-lg rounded-lg g-white/30 backdrop-blur-2xl bg-transparent flex flex-col justify-between h-full";
+      "p-4 shadow-lg rounded-lg g-white/30 border border-white backdrop-blur-2xl bg-transparent flex flex-col justify-between h-full";
 
     div.setAttribute("data-aos", "fade-up");
     div.setAttribute("data-aos-duration", "1300");
