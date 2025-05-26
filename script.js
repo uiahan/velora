@@ -25,21 +25,21 @@ async function fetchQuotes() {
   data.forEach((q) => {
     const div = document.createElement("div");
     div.className =
-      "p-4 shadow-lg rounded-lg border border-gray-300 g-white/30 backdrop-blur-2xl bg-white flex flex-col justify-between h-full";
+      "p-4 shadow-lg rounded-lg g-white/30 backdrop-blur-2xl bg-transparent flex flex-col justify-between h-full";
 
     div.setAttribute("data-aos", "fade-up");
     div.setAttribute("data-aos-duration", "1300");
 
     div.innerHTML = `
             <div>
-                <h1 class="font-semibold text-gray-800 text-2xl">
+                <h1 class="font-semibold text-white text-2xl">
                     ${q.author}
                 </h1>
-                <p class="mt-1 text-gray-700 font-medium line-clamp-7">${
+                <p class="mt-1 text-white font-medium line-clamp-7">${
                   q.content
                 }</p>
             </div>
-            <p class="mt-3 font-semibold text-gray-700 text-end text-sm">
+            <p class="mt-3 font-semibold text-white text-end text-sm">
                 ${new Date(q.created_at).toLocaleDateString("id-ID")}
             </p>
           `;
