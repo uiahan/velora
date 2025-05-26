@@ -1,0 +1,18 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-image: url('/©Njoy\'Obs.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background-image: url('/©Njoy\'Obs.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
